@@ -1,0 +1,363 @@
+body {
+    background-color: #bcd2e8;
+}
+
+.about {
+    float: right;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.dropdown {
+    text-align: left;
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-con {
+
+    display: none;
+    position: absolute;
+    background-color: #008080;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-con a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-con a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-con {
+    display: block;
+}
+
+.dropdown:hover .about {
+    background-color: #3e8e41;
+}
+
+.feedback {
+    float: right;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.contact {
+    float: right;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.home {
+    float: right;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.regtab {
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    z-index: 2;
+    width: 40%;
+    margin: 10% 30% -50% 30%;
+
+    padding: 20px;
+    text-align: center;
+
+}
+
+.regtab textarea {
+    margin-left: 30px;
+}
+
+.regtab select {
+    margin-left: 30px;
+}
+
+.regtab input {
+    margin-left: 30px;
+}
+
+.navb {
+    color: rgb(23, 101, 101);
+    float: right;
+    background-color: rgb(31, 9, 37);
+}
+
+.navbar a:hover {
+    background-color: rgb(36, 136, 136);
+}
+
+header {
+    background-color: rgb(31, 9, 37);
+    padding-top: 5px;
+    padding-left: 5px;
+
+}
+
+.bheader {
+    text-align: center;
+}
+
+#movingtxt {
+    text-align: center;
+    border-radius: 25px;
+}
+
+.hometab {
+    width: 100%;
+    height: 750px;
+}
+
+.mid {
+    position: relative;
+    text-align: center;
+    border-radius: 25px;
+    width: 50%;
+
+    background-color: #528AAE;
+    background-color: rgb(0, 0, 0);
+
+    background-color: rgba(0, 0, 0, 0.4);
+
+    color: white;
+    font-weight: bold;
+
+    z-index: 2;
+    text-align: center;
+}
+
+.midbox {
+
+    position: relative;
+    text-align: center;
+    border-radius: 25px;
+    margin-top: 15px;
+    width: 100%;
+    height: 100%;
+    padding-top: 10px;
+    background-color: #528AAE;
+}
+
+.midbox h2 {
+    margin-top: 0px;
+    border-radius: 25px;
+    background-color: #bcd2e8;
+    margin-left: 12%;
+    margin-right: 12%;
+    font-family: 'Times New Roman', Times, serif, Helvetica, sans-serif;
+}
+
+.right {
+    position: relative;
+    text-align: center;
+    border-radius: 25px;
+    width: 25%;
+    Padding-top: -10px;
+    background-color: #528AAE;
+
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    font-weight: bold;
+
+    z-index: 2;
+    text-align: center;
+
+}
+
+.right h2 {
+    margin-top: -20px;
+    border-radius: 25px;
+    background-color: #bcd2e8;
+    margin-left: 12%;
+    margin-right: 12%;
+    font-family: 'Times New Roman', Times, serif, Helvetica, sans-serif;
+}
+
+.right-low {
+    margin-top: -10px;
+    position: relative;
+    text-align: left;
+    border-radius: 25px;
+    width: 25%;
+    background-color: #528AAE;
+
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    font-weight: bold;
+
+    z-index: 2;
+    text-align: center;
+
+}
+
+.right-low h2 {
+    position: sticky;
+    text-align: center;
+    margin-top: -20px;
+    border-radius: 25px;
+    background-color: #bcd2e8;
+    margin-left: 12%;
+    margin-right: 12%;
+    font-family: 'Times New Roman', Times, serif, Helvetica, sans-serif;
+}
+
+.rightbox {
+    background-color:#528AAE;
+    border-radius: 25px;
+    padding: 10px;
+}
+
+.faq1 {
+    margin-top: -150px;
+    position: fixed;
+}
+
+.left {
+    position: relative;
+    text-align: center;
+    border-radius: 25px;
+    width: 25%;
+    Padding-top: -10px;
+    background-color: #528AAE;
+
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.4);
+    color: white;
+    font-weight: bold;
+
+    z-index: 2;
+    text-align: center;
+}
+
+.leftbox {
+    background-color: #528AAE;
+    border-radius: 25px;
+    padding: 105px;
+}
+
+.leftbox h2 {
+    border-radius: 25px;
+    background-color: #bcd2e8;
+    margin-top: -35%;
+    margin-left: 12%;
+    margin-right: 12%;
+    font-family: 'Times New Roman', Times, serif, Helvetica, sans-serif;
+}
+
+.itr h1 {
+    border-radius: 25px;
+    text-align: center;
+    margin: 0% 10% 0% 10%;
+    color: white;
+    background-color: #378a90;
+    font-family: 'Times New Roman', Times, serif, Helvetica, sans-serif;
+}
+
+.itr table {
+    position: absolute;
+    margin-left: 30%;
+    margin-right: 30%;
+    margin-top: 10%;
+    padding: 10%;
+    border: solid;
+    border-radius: 25px;
+
+
+    background-color: rgb(0, 0, 0);
+
+    background-color: rgba(0, 0, 0, 0.4);
+
+    color: white;
+    font-weight: bold;
+    border: 3px solid #f1f1f1;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 50%;
+    padding: 20px;
+    text-align: center;
+
+}
+
+.itr {
+    background-image: url("background.jpg");
+    background-repeat: no-repeat;
+    height: 100%;
+
+    background-position: center;
+    background-size: cover;
+}
+
+input {
+    border-radius: 25px;
+    background-color: #bcd2e8;
+    margin-left: 12%;
+    margin-right: 12%;
+    font-family: 'Times New Roman', Times, serif, Helvetica, sans-serif;
+}
+
+.buttons {
+    text-align: center;
+}
+
+.oui {
+    padding-left: 33%;
+}
+
+.quicklinks {
+    display: list-item;
+    color: black;
+    text-align: center;
+    padding: 12px 10px 10px 0px;
+    text-decoration: none;
+    font-size: 22px;
+}
+
+.quicklinks a:hover {
+    background-color: rgb(81, 179, 179);
+}
+
+.faq {
+    font-size: 15;
+}
+
+.bg {
+    background-image: url("background1.jpg");
+    height: 100%;
+
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}

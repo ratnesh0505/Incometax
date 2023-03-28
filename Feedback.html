@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<head>
+    <title>Feedback</title>
+    <style>
+body
+{
+    background-color: #bcd2e8;
+}
+.about
+{
+    float:right;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration:none;
+    font-size: 17px;
+  }
+.dropdown {
+    text-align: left;
+    position: relative;
+    display: inline-block;
+  }
+.dropdown-con
+{
+
+    display: none;
+  position: absolute;
+  background-color: #008080;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-con a
+{
+    color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown-con a:hover {background-color: #ddd;}
+
+.dropdown:hover .dropdown-con {display: block;}
+
+.dropdown:hover .about {background-color: #3e8e41;}
+
+.feedback
+{
+    float: right;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+.contact
+{
+    float: right;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration:none;
+    font-size: 17px;
+}
+.home
+{
+    float: right;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration:none;
+    font-size: 17px;
+}
+.regtab
+{
+    border-style: solid;
+    border-radius: 2%;
+    padding: 12px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:15%;
+    margin-bottom: auto;
+}
+.navb
+{
+    color: rgb(23, 101, 101);
+    float: right;
+    background-color: rgb(31, 9, 37);
+}
+a:hover
+{
+    background-color: rgb(36, 136, 136);
+}
+header
+{
+    background-color: rgb(31, 9, 37);
+    padding-top: 5px;
+    padding-left: 5px;
+}
+input
+{
+    border-radius: 25px;
+    background-color:#bcd2e8 ;
+    font-family: 'Times New Roman', Times, serif, Helvetica, sans-serif;
+}
+textarea
+{
+    width:50%;
+}
+.box
+{
+    width:500px;
+    text-align: left;
+    font-size: 14px;
+    background-color: #528AAE ;
+    margin-top: 5%;
+    margin-left:33%;
+    margin-right:30%;
+    padding-left: 20px;
+    border-radius: 5%;
+}
+.button{
+    text-align: left;
+}
+    </style>
+</head>
+<body background="building.jpg" style="background-repeat: no-repeat; background-size: cover;">
+    <header>
+        <img src="logo.jpg" alt="logo" width="200px" height="50px">
+        <nav class="navbar">
+            <a class="feedback" href="Feedback.html" style="color: aliceblue;">Feedback</a>
+            <a class="contact" href="Contact Us.html" style="color: aliceblue;">Contact us</a>
+            <div class="dropdown">
+                <a class="about" href="#" style="color: aliceblue;">About us</a>
+                <div class="dropdown-con">
+                    <a href="About The Portal.html" style="color: aliceblue;">About The Portal</a>
+                    <a href="History.html" style="color: aliceblue;">History</a>
+                </div>
+            </div>
+            <a class="home" href="index.html" style="color: aliceblue;">Home</a>
+        </nav>
+    </header>
+    <div>
+        <div class="box">
+                <h1 style="text-align: center;">Feedback</h1> 
+                <p><strong>Please provide your feedback below:</strong> </p>
+                <form role="form" method="post" id="reused_form">
+                    <div>
+                        <div>
+                            <h4>How do you rate your overall experience using our Online Services?</h4>
+                            <p>
+                                <label>
+                                    <input type="radio" name="experience" id="radio_experience" value="bad">
+                                    Bad 
+                                </label>
+                                <label>
+                                    <input type="radio" name="experience" id="radio_experience" value="average">
+                                    Average 
+                                </label>
+                                <label>
+                                    <input type="radio" name="experience" id="radio_experience" value="good">
+                                    Good 
+                                </label>
+                            </p>
+                            <h4>How do you rate our coustomer service and response?</h4>
+                            <p>
+                                <label>
+                                    <input type="radio" name="experience" id="radio_experience" value="bad">
+                                    Bad 
+                                </label>
+                                <label>
+                                    <input type="radio" name="experience" id="radio_experience" value="average">
+                                    Average 
+                                </label>
+                                <label>
+                                    <input type="radio" name="experience" id="radio_experience" value="good">
+                                    Good 
+                                </label>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div >
+                        <p>Comments:</p>
+                            <textarea type="textarea" name="comments" id="comments" placeholder="Your Comments" maxlength="6000" rows="7"></textarea>
+                        </div>
+                    </div>
+                    <div >
+                        <div>
+                        <p>Your Name:</p>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div>
+                            <p>Email:</p>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="button">
+                        <div >
+                            <button type="submit">Post </button>
+                        </div>
+                    </div>
+                </form>
+                <div id="success_message" style="width:100%; height:100%; display:none; "> <h3>Posted your feedback successfully!</h3> </div>
+                <div id="error_message" style="width:100%; height:100%; display:none; "> <h3>Error</h3> Sorry there was an error sending your form. </div>
+            </div>
+</body>
+</html>
