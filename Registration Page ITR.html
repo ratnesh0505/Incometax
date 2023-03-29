@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Registration page</title>
+    <link rel="stylesheet" href="upgrade.css">
+</head>
+
+<body background="background1.jpg" style="background-repeat: no-repeat; background-size: cover;">
+    <header>
+        <img src="logo.jpg" alt="logo" width="200px" height="50px">
+        <nav class="navbar">
+            <a class="feedback" href="Feedback.html" style="color: aliceblue;">Feedback</a>
+            <a class="contact" href="Contact Us.html" style="color: aliceblue;">Contact us</a>
+            <div class="dropdown">
+                <a class="about" href="#" style="color: aliceblue;">About us</a>
+                <div class="dropdown-con">
+                    <a href="About The Portal.html" style="color: aliceblue;">About The Portal</a>
+                    <a href="History.html" style="color: aliceblue;">History</a>
+                </div>
+            </div>
+            <a class="home" href="index.html" style="color: aliceblue;">Home</a>
+        </nav>
+    </header>
+    <table class="regtab">
+        <form method="post" action="notworking.html">
+        <th colspan="3">
+            <h1>New User Registration</h1>
+        </th>
+        <tr>
+            <td>Name</td>
+            <td>
+                :
+            </td>
+            <td>
+                <input id="name" type="text" placeholder="Enter name" required>
+            </td>
+        </tr>
+        <tr>
+            <td>Age</td>
+            <td>
+                :
+            </td>
+            <td>
+                <input id="age" type="text" placeholder="Enter age" required>
+            </td>
+        </tr>
+        <tr>
+            <td>Gender</td>
+            <td>
+                :
+            </td>
+            <td>
+                <label for="gender-homme">
+                    <input id="gender-homme" type="radio" name="gender" value="male" required> Male
+                </label>
+                <label for="gender-homme">
+                    <input id="gender-femme" type="radio" name="gender" value="female" required> Female
+                </label>
+            </td>
+        </tr>
+        <tr>
+            <td>E-mail</td>
+            <td>
+                :
+            </td>
+            <td>
+                <input id="email" type="url" placeholder="Enter profession" required>
+            </td>
+        </tr>
+        <tr>
+            <td>Phone Number</td>
+            <td>
+                :
+            </td>
+            <td>
+                <input id="Phone" type="tel" placeholder="Enter profession" required>
+            </td>
+        </tr>
+        </tr>
+        <tr>
+            <td>Date Of Birth</td>
+            <td>
+                :
+            </td>
+            <td>
+                <input id="dob" type="date" placeholder="Enter profession" required>
+            </td>
+        </tr>
+        <tr>
+            <td>Address</td>
+            <td>
+                :
+            </td>
+            <td>
+                <textarea id="address" type="text" placeholder="Enter address" required></textarea>
+            </td>
+        </tr>
+        <td>State</td>
+        <td>
+            :
+        </td>
+        <td>
+            <select name="dropdown">
+                <option value="Kashmir">Kashmir</option>
+                <option value="Punjab" selected>Punjab</option>
+                <option value="Himachal">Himachal</option>
+            </select>
+        </td>
+        </tr>
+        <tr>
+            <td>Annual Income</td>
+            <td>
+                :
+            </td>
+            <td>
+                <input id="annual income" type="text" placeholder="Enter annual income" required>
+            </td>
+        </tr>
+        <tr>
+            <td>Photo</td>
+            <td>
+                :
+            </td>
+            <td>
+                <input id="photo" type="file" accept="image/jpeg,image/png" required>
+            </td>
+        </tr>
+        <tr>
+        <tr>
+            <td colspan="3">
+                <input id="submit" type="submit" onsubmit="validateform()">
+                <input id="reset" type="reset">
+            </td>
+        </tr>
+        </form>
+    </table>
+</body>
+
+</html>
